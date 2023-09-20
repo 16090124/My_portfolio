@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/71f0806ca3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">  
+            <nav>
+                <img src="Myphoto.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend-Web Developer</p>
+                <h1>Hi,I am <span>Vishal</span><br> Singh from <span style="background-image: linear-gradient(hsl(32, 100%, 50%) 34%,white 34% 65%,green 65% 100%);">India</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ............About............ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Myphoto.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Vishal Singh, and I am an Electronic and Telecommunication Engineering student. I am pursuing my degree from the Sandip Institute of Technology and Research Center. I am a front-end web developer, and I enjoy designing websites. I am very passionate about my work.</p>
+                    <div class="tab-titles">  
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web-Design</span>: Frontend-Development</li>
+                            <li> HTML,CSS,Java Script,React.Js, MySQL</li>
+                            <li><span>Desktop-application</span>: C#.NET Framework</li>
+                            <li><span>Language</span>: C++,Python</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br>Emerging Technology (C#.NET/Python)(Image processing, Cloud Computing)</li>
+                            <!-- <li><span>Web-devlopment</span><br>HTML,CSS,Java Script</li>
+                            <li><span>Desktop-application</span><br>C#/ .NET</li> -->
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E. pursuing(2024 passout batch)</span><br>Sandip Institute of Technology and Research Center  ; 8.72 sgpa</li>
+                            <li><span>12th 2020</span><br>Hindi Secondary /Higher Secondary School  ; 71.54 %</li>
+                            <li><span>10th 2018</span><br>Hindi Secondary /Higher Secondary School  ; 88.60 %</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------Services------------- -->
+    <div id="services">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>  <!--fontawesome -->
+                <h2>Frontend-Devlopment</h2>
+                <p>I am a frontend developer, so I have designed the user-friendly interface and interactive design.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div>
+                <h2>Desktop -Application</h2>
+                <p>I have also developed desktop or Windows applications using C# and the.NET Framework.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <!-- <div>
+                <h2>Frontend-Devlopment</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex tempore quisquam impedit doloremque sapiente porro explicabo eius perspiciatis expedita rerum nostrum fuga animi atque culpa ad ducimus, voluptates alias aliquam.</p>
+                <a href="#">Learn More</a>
+            </div> -->
+        </div>
+    </div>
+    <!-- -------------Portfolio ,my work-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>PhotoGallery Website</h3>
+                        <p>A collection of various photos or groups of photos are there.</p>
+                        <a href="https://sandipotsaventc.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png"> 
+                    <div class="layer">
+                        <h3>Simple Clock</h3>
+                        <p>Website that shows time in WallClock.</p>
+                        <a href="https://16090124.github.io/Analog_clock/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Music Album</h3>
+                        <p>Listen to some beautiful songs.</p>
+                        <a href=" https://16090124.github.io/Music_Album/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/16090124" target="_blank" class="btn">GITHUB Link</a>
+        </div>
+    </div>
+    <!-- -------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>vishalaasingh@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8767412341</p>
+                <div class="social-icons">
+                    <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                    <a href="https://www.linkedin.com/in/vishal-singh-0a5914220/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href=""><i class="fa-brands fa-square-whatsapp"></i></a> -->
+                </div>
+                <a href="VishalResume.pdf" download class="btn btn2">Download CV</a>   
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <!-- <script src="https://sheetdb.io/s/f/xbrigo99iwo18.js"></script> -->
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">This is <i class="fa-solid fa-heart"></i> Vishal Singh Portfolio</div> 
+        <!-- copyright easy tutorials -->
+    </div>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
